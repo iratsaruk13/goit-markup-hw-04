@@ -143,9 +143,13 @@ a {
       rgba(47, 48, 58, 0.4)
     ),
     url(../images/bg-image.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   padding-top: 200px;
   padding-bottom: 200px;
   max-width: 1600px;
+  margin: 0 auto;
 }
 
 .main-title {
@@ -351,7 +355,7 @@ fill: #ffffff; */
   justify-content: center;
 }
 .clients-item {
-  width: 170px;
+  width: calc((100% - (5 * 30px)) / 6);
   height: 92px;
 }
 .clients-link {
@@ -496,8 +500,11 @@ fill: #ffffff; */
 .portfolio-projects-item {
   width: calc((100% - 60px) / 3);
 }
-.portfolio-projects-item:hover,
-.portfolio-projects-item:focus {
+.portfolio-project-link {
+  display: block;
+}
+.portfolio-project-link:hover,
+.portfolio-project-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
